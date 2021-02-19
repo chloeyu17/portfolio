@@ -42,6 +42,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 nav{
@@ -73,6 +74,10 @@ nav a{
     color: var(--color2);
 }
 
+.break{
+    height: 110px;
+}
+
 .flexwrap{
     display: flex;
     width: 100%;
@@ -85,18 +90,21 @@ nav a{
     font-family: var(--serif);
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
 }
 /*Section titles left sidebar*/
 .headshot{
     width: 200px;
+    height: 200px;
     margin: var(--margin);
     border: solid var(--color1) 1px;
+    z-index: -1;
 }
 
 .about{
     position: absolute;
-    top: 270px;
-    z-index: 1;
+    top: 275px;
+    z-index: -1;
     margin: 0;
 }
 
@@ -114,15 +122,22 @@ nav a{
 
 /*Section content formatting*/
 .content{
-    clear: both;
     font-size: 16px;
     color: var(--color1);
     padding: var(--padding);
     margin: var(--margin);
     flex: 1 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 /*Portfolio image formatting*/
+.ASAPimg{
+    width: 50%;
+}
+
 .portimg{
-    width: 200px;
+    width: 25%;
+    display: inline-flex;
 }
