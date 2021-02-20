@@ -14,6 +14,9 @@
     --color4: rgb(64, 64, 199);
     --color5: rgb(35, 35, 45);
     --color6: rgb(187, 204, 255);
+    --color7: rgb(230, 207, 172);
+    --color8: rgb(159, 183, 255);
+    --color9: rgb(159, 255, 186);
     --serif: 'Lora', 'Times New Roman', Times, serif;
     --sans-serif: 'Roboto', 'Arial', sans-serif;
 }
@@ -30,8 +33,12 @@ h1 {
     font-weight: 500;
 }
 
-.bold{
-    font-weight: bold;
+h3 {
+    font-size: 24px;
+    color: var(--color1);
+    text-align: left;
+    padding: var(--padding);
+    margin: var(--margin);
 }
 
 /*Header and navbar*/
@@ -43,6 +50,8 @@ header {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
+    border: 2px solid var(--color5);
 }
 
 nav{
@@ -80,32 +89,20 @@ nav a{
 
 .flexwrap{
     display: flex;
-    width: 100%;
-    margin: var(--margin);
     flex-flow: row wrap;
 }
 
 .sect{
-    padding: var(--padding);
     font-family: var(--serif);
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    margin: 150px 0px 150px 0px;
 }
 /*Section titles left sidebar*/
 .headshot{
-    width: 200px;
-    height: 200px;
-    margin: var(--margin);
+    width: 160px;
+    margin: var(--padding);
     border: solid var(--color1) 1px;
-    z-index: -1;
-}
-
-.about{
-    position: absolute;
-    top: 275px;
-    z-index: -1;
-    margin: 0;
 }
 
 .title{
@@ -122,7 +119,7 @@ nav a{
 
 /*Section content formatting*/
 .content{
-    font-size: 16px;
+    font-size: 20px;
     color: var(--color1);
     padding: var(--padding);
     margin: var(--margin);
@@ -134,10 +131,26 @@ nav a{
 
 /*Portfolio image formatting*/
 .ASAPimg{
-    width: 50%;
+    width: 540px;
 }
 
 .portimg{
-    width: 25%;
-    display: inline-flex;
+    width: 250px;
+}
+
+#about{
+    background-color: var(--color7);
+    width: 100%;
+    border-bottom: 2px solid var(--color5);
+}
+
+#portfolio{
+    background-color: var(--color8);
+    width: 100%;
+    border-bottom: 2px solid var(--color5);
+}
+
+#contact{
+    background-color: var(--color9);
+    width: 100%;
 }
