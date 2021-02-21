@@ -51,7 +51,7 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 1;
-    border: 2px solid var(--color5);
+    border: 2px solid var(--color1);
 }
 
 nav{
@@ -96,7 +96,7 @@ nav a{
     font-family: var(--serif);
     display: flex;
     flex-flow: row wrap;
-    margin: 150px 0px 150px 0px;
+    margin: 150px 0px 180px 0px;
 }
 /*Section titles left sidebar*/
 .headshot{
@@ -126,16 +126,40 @@ nav a{
     flex: 1 0 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
 }
 
 /*Portfolio image formatting*/
-.ASAPimg{
-    width: 540px;
+.portimg{
+    height: 220px;
+    width: 300px;
+    object-fit: cover;
+    border: solid var(--color1) 1px;
+    margin: var(--margin);
+    flex: 1 1 auto;
 }
 
-.portimg{
-    width: 250px;
+.asap{
+    background: url(../assets/images/ASAP.png);
+    background-size:cover;
+}
+
+.horiseon{
+    background: url(../assets/images/horiseon.png);
+    background-size:cover;
+}
+
+.csssite{
+    background: url(../assets/images/csssite.png);
+    background-size:cover;
+}
+
+.sitelink{
+    position: relative;
+    top: 181px;
+    background: var(--color4);
+    padding: var(--padding);
+    color: var(--color2);
+    border: var(--color2) solid 2px;
 }
 
 #about{
