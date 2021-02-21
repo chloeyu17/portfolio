@@ -78,33 +78,22 @@ nav a{
     background-color: var(--color2);
     color: var(--color5);
 }
-.navbar a.active{
-    background-color: var(--color4);
-    color: var(--color2);
-}
 
-.break{
-    height: 110px;
-}
-
+/*Sets the page as a flexbox*/
 .flexwrap{
     display: flex;
     flex-flow: row wrap;
 }
 
+/*Flexbox for individual sections of the page*/
 .sect{
     font-family: var(--serif);
     display: flex;
     flex-flow: row wrap;
     margin: 150px 0px 180px 0px;
 }
-/*Section titles left sidebar*/
-.headshot{
-    width: 160px;
-    margin: var(--padding);
-    border: solid var(--color1) 1px;
-}
 
+/*Section titles left sidebar*/
 .title{
     font-weight: bold;
     font-family: var(--sans-serif);
@@ -115,6 +104,13 @@ nav a{
     border: 1px solid var(--color5);
     padding: var(--padding);
     margin:var(--margin);
+}
+
+/*Headshot to be contained in the about title*/
+.headshot{
+    width: 160px;
+    margin: var(--padding);
+    border: solid var(--color1) 1px;
 }
 
 /*Section content formatting*/
@@ -134,13 +130,27 @@ nav a{
     width: 300px;
     object-fit: cover;
     border: solid var(--color1) 1px;
-    margin: var(--margin);
+    margin: 0px var(--margin) var(--margin) var(--margin);
     flex: 1 1 auto;
 }
 
+.portimg:hover{
+    height: 240px;
+    width: 320px;
+    border: solid var(--color3) 2px;
+}
+
+/*Webpage links -- set background image to picture of the site*/
 .asap{
     background: url(./images/ASAP.png);
     background-size:cover;
+    width: 600px;
+}
+
+.asap:hover{
+    height: 240px;
+    width: 620px;
+    border: solid var(--color3) 2px;
 }
 
 .horiseon{
@@ -153,6 +163,7 @@ nav a{
     background-size:cover;
 }
 
+/*Sets the site links in the bottom left corner of the section*/
 .sitelink{
     position: relative;
     top: 181px;
@@ -162,6 +173,7 @@ nav a{
     border: var(--color2) solid 2px;
 }
 
+/*Section id's*/
 #about{
     background-color: var(--color7);
     width: 100%;
@@ -177,4 +189,32 @@ nav a{
 #contact{
     background-color: var(--color9);
     width: 100%;
+}
+/*Media Query for Portfolio resize*/
+@media screen and (max-width: 1050px){
+    .title{
+        margin:var(--margin) var(--margin) var(--margin) 50px; 
+    }
+}
+
+/*Media Queries for Tablet and Phone*/
+@media screen and (max-width: 992px){
+    .title{
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: var(--margin) auto var(--margin) auto;
+    }
+    h3{
+        margin: 0 auto 0 auto;
+    }
+    .portimg{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .navbar{
+        display: none;
+    }
 }
