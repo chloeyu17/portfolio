@@ -139,12 +139,12 @@ nav a{
 }
 
 .asap{
-    background: url(../assets/images/ASAP.png);
+    background: url(./images/ASAP.png);
     background-size:cover;
 }
 
 .horiseon{
-    background: url(../assets/images/horiseon.png);
+    background: url(./images/horiseon.png);
     background-size:cover;
 }
 
